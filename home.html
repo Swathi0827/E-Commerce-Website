@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: baby pink;
+}
+.video-background{
+	    position:fixed;
+		right:0;
+		bottom:0;
+		min-width:100%;
+		min-height:100%;
+		z-index:-1;
+	    }
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: baby pink;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+	
+}
+
+.product {
+    background-color: baby pink;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 100%;
+	position:relative;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 18px;
+    color: #555;
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+    </style>
+</head>
+<body>  
+<video autoplay muted loop class="video-background" >
+        <source src="https://www.shutterstock.com/shutterstock/videos/1102605421/preview/stock-footage-abstract-backgrounds-embracing-the-flow-of-connectivity-through-triangle-shapes-technology-science.webm" type="video/mp4">
+        Your browser dose not support the video tag.
+        </video>
+ <h1>Welcome To Swaha Store</h1>
+ <ul>
+ <li><a href="#Leather Bag" class="link">Leather Bag</a></li>
+ <li><a href="#Jute Bag" class="link">Jute Bag</a></li>
+ <li><a href="#Paper Bag" class="link">Paper Bag</a></li>
+ <li><a href="#Cover Bag" class="link">Cover Bag</a></li>
+  <li><a href="#Saree Bag" class="link">Saree Bag</a></li>
+  <li><a href="#College Bag" class="link">College Bag</a></li>
+ </ul>
+ <div class="nav-bottom">
+      <a href="cartpage.html">Cart</a>
+	  </div>
+	  
+    <div class="container">
+        <h2>Featured Products</h2>
+		<div>
+        <div class="product" id="Leather Bag">
+		<img src="https://mahetri.in/cdn/shop/products/women_s_tote_bag_7_512x596.jpg?v=1650437563" width="200" height="250" alt =leather bag>
+            <h2>Leather Bag</h2>
+            <p>Price: $10.00</p>
+			<button onclick="Buy('Leather Bag')"> Buy </button>
+			<button onclick="addToCart('Leather Bag')"> Add to cart </button>
+            
+        </div>
+       <div class="product" id="Jute Bag">
+	  <img src="https://www.thegoodroad.in/cdn/shop/products/DSC02614-Edit_1200x1200.jpg?v=1676881022"width="200" height="250" alt ="jute bag">
+            <h2>Jute Bag</h2>
+			<p>Price: $15.65</p>
+			<button onclick="Buy('Jute Bag')"> Buy </button>
+			<button onclick="addToCart('Jute Bag')"> Add to cart </button>
+        </div>
+		 <div class="product" id="Paper Bag">
+		 <img src="https://www.mockupworld.co/wp-content/uploads/dynamic/2015/08/Brown-Paper-Bag-MockUp-536x0-c-default.jpg" width="250" height="300" alt="Paper Bag">
+            <h2>Paper Bag</h2>
+            <p>Price: $12.05</p>
+			<button onclick="Buy('Paper Bag')"> Buy </button>
+			<button onclick="addToCart('Paper Bag')"> Add to cart </button>
+        </div>
+		 <div class="product" id="Cover Bag">
+		 <img src="https://i.ebayimg.com/images/g/6YoAAOSwm85jwGiX/s-l400.jpg"width="220" height="260" alt="Cover Bag">
+            <h2>Cover Bag</h2>
+            <p>Price: $9.99</p>
+			<button onclick="Buy('Cover Bag')"> Buy </button>
+			<button onclick="addToCart('Cover Bag')"> Add to cart </button>
+        </div>
+	
+	 <div class="product" id="Saree Bag">
+		 <img src="https://m.media-amazon.com/images/I/61ETy6X7PYL._AC_UF1000,1000_QL80_.jpg"width="280" height="310" alt="Saree Bag">
+            <h2>Saree Bag</h2>
+            <p>Price: $19.99</p>
+			<button onclick="Buy('Saree Bag')"> Buy </button>
+			<button onclick="addToCart('Saree Bag')"> Add to cart </button>
+			</div>
+	
+	 <div class="product" id="College Bag">	
+	      <img src="https://m.media-amazon.com/images/I/51whr1eXP0L.jpg"width="260" height"280" alt="college bag">
+		     
+            <h2>College Bag</h2>
+            <p>Price: $35.99</p>
+			<button onclick="Buy('College Bag')"> Buy </button>
+			<button onclick="addToCart('College Bag')"> Add to cart </button>
+			</div>
+			
+	</div>
+	<script>
+	function addToCart(product) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(product + ' has been added to the cart.');
+        }
+		function checkLoginStatus() {
+            const loggedIn = JSON.parse(localStorage.getItem('loggedIn')) || false;
+            if (!loggedIn) {
+                window.location.href = 'index.html';
+            }
+        }
+	
+	
+	</script>
+</body>
+</html>
